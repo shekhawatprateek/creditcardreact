@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+* {
+  font-family: poppins;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100vh;
+}
+
+.credit__card {
+  /* border: 1px solid #000; */
+  width: 40%;
+  margin: 0px auto;
+  border-radius: 30px;
+  background-color: #548ca8;
+}
+
+.container__heading {
+  text-align: center;
+  font-size: 22px;
+  padding: 22px 0px;
+  color: #eeeeee;
+  white-space: nowrap;
+}
+
+.container__inputs {
+  /* border: 1px solid rgb(132, 216, 23); */
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  padding: 16px 0px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.container__inputs input {
+  width: 18%;
+  border-radius: 8px;
+  padding: 8px 8px;
+  text-align: center;
+  font-size: 24px;
+  box-sizing: border-box;
+  background-color: #eeeeee;
+  border: none;
+  color: rgb(0, 0, 0);
+  letter-spacing: 3px;
+}
+
+.container__button {
+  display: flex;
+  /* border: 1px solid rgb(9, 35, 150); */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 16px 0px;
+}
+.container__button button {
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #eee;
+  letter-spacing: 2px;
+  font-weight: 900;
+  border: none;
+  background-color: #548ca8;
+  transition: all 0.7s ease;
+  border-radius: 10px;
+}
+.container__button button:enabled {
+  color: #548ca8;
+  background-color: #fff;
+  border: none;
+  transition: all 0.7s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.container__list {
+  display: flex;
+  /* border: 1px solid rgb(223, 99, 16); */
+  justify-content: center;
+  overflow-y: auto;
+  height: 40%;
+  width: 65%;
+  margin: 30px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.ind__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__list ul {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.container__list ul li {
+  padding: 8px 4px;
+  font-size: 24px;
+  letter-spacing: 6px;
+}
+.container__list ul button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 968px) {
+  .container__heading {
+    text-align: center;
+    font-size: 16px;
+    padding: 22px 0px;
+    color: #eeeeee;
+    white-space: nowrap;
   }
-  to {
-    transform: rotate(360deg);
+
+  .credit__card {
+    width: 86%;
+  }
+
+  .container__inputs {
+    width: 100%;
+  }
+
+  .container__inputs input {
+    font-size: 20px;
+    padding: 8px 4px;
+  }
+
+  .container__list {
+    width: 96%;
+  }
+
+  .container__list ul li {
+    font-size: 20px;
+    letter-spacing: 4px;
   }
 }
